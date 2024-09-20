@@ -79,15 +79,16 @@ WSGI_APPLICATION = 'activos_tic.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# mysql://root:@:30502/railway
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': environ.get('DB_NAME'),
-        'HOST': environ.get('DB_HOST'),
-        'PASSWORD': environ.get('DB_PASSWORD'),
-        'PORT': environ.get('DB_PORT'),
-        'USER': environ.get('DB_USER')
+        'NAME': 'railway',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PASSWORD': 'nQeQIXOMRTmAyMulGCdhJFtlMBQxjrOb',
+        'PORT': '30502',
+        'USER': 'root'
     }
 }
 
